@@ -14,5 +14,6 @@ with requests.Session() as s:
     decoded_content = download.content.decode('utf-8')
     cr = csv.reader(decoded_content.splitlines(), delimiter=',')
     my_list = list(cr)
-    for row in my_list:
-        print(row)
+    print(my_list)
+   #  for row in my_list:
+      #   print(row)
