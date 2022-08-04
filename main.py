@@ -14,6 +14,7 @@ with requests.Session() as s:
     decoded_content = download.content.decode('utf-8')
     cr = csv.reader(decoded_content.splitlines(), delimiter=',')
     my_list = list(cr)
-    print(my_list)
+    x = pd.DataFrame(data=my_list[1:], columns=my_list[0])
+    print(x)
    #  for row in my_list:
       #   print(row)
