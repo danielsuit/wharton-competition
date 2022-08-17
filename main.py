@@ -10,6 +10,8 @@ load_dotenv()
 key = os.environ.get('API_KEY')
 CSV_URL = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&outputsize=full&apikey='+key+'&datatype=csv'
 df = pd.read_csv(CSV_URL)
+def main():
+   close_hist()
 def close_hist():
    plt.hist(df.close, bins=100)
    plt.title("Closing Price Histogram")
@@ -35,4 +37,5 @@ def high_hist():
    plt.xlabel('Price')
    print(plt.show())
 low_hist()
-
+if __name__ == '__main__':
+    main()
