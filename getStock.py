@@ -1,12 +1,14 @@
-import tensorflow as tf
+import requests
+from bs4 import BeautifulSoup
 import os
 from dotenv import load_dotenv
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
+import csv
+from getPrice import *
 #stocks = pd.read_csv('stocklist.csv')
 #print(stocks.head)
-import csv
 class GetStock:
    def __init__(self, number, name, ticker, exchange, industryGroup, industry, subIndustry, no):
       self.number = number;
@@ -26,11 +28,15 @@ with open("stocklist.csv") as csvfile:
       stockList.append(row);
 for i in range(len(stockList)):
    x = GetStock(i, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6])
-   print(x)
-
 def sortStockList(stocklist):
    for i in range(len(stockList)):
       stocklist[i] = stockList[i][1], stockList[i][0], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]
       #ticker, name, exchange, industryGroup, industry, subIndustry
-   print(stocklist)
-sortStockList(stockList)
+   return stockList
+def insertPrice(stocklist):
+   stockList = sortStockList(stocklist)
+   for i in range(len(stockList)):
+      price = getPrice(stockList[i][0])
+      stockList[i] = [price, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]]
+      print(stockList[i])
+insertPrice(stockList)
