@@ -8,5 +8,6 @@ from matplotlib import pyplot as plt
 from historicalData import *
 def main():
    close_hist()
+   
 if __name__ == '__main__':
     main()

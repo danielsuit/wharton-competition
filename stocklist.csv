@@ -25,7 +25,7 @@ American Express Co,AXP,New York Stock Exchange Inc.,Financials,Diversified Fina
 American Water Works Co Inc,AWK,New York Stock Exchange Inc.,Utilities,Utilities,Water Utilities,Water Utilities
 Amgen Inc,AMGN,Nasdaq,Health Care,Pharmaceuticals and Biotechnology,Biotechnology,Biotechnology
 AMN Healthcare Services Inc,AMN,New York Stock Exchange Inc.,Health Care,Health Care Equipment and Services,Health Care Providers and Services,Health Care Services
-Anhui Conch Cement Co Ltd,00914,Hong Kong Exchanges And Clearing Ltd,Materials,Materials,Construction Materials,Construction Materials
+Anhui Conch Cement Co Ltd,0914,Hong Kong Exchanges And Clearing Ltd,Materials,Materials,Construction Materials,Construction Materials
 Apple Inc,AAPL,Nasdaq,Information Technology,Technology Hardware and Equipment,Technology Hardware Storage and Peripherals,Technology Hardware Storage and Peripherals
 Aptiv PLC,APTV,New York Stock Exchange Inc.,Consumer Discretionary,Automobiles and Components,Auto Components,Auto Parts and Equipment
 ArcBest Corp,ARCB,Nasdaq,Industrials,Transportation,Road and Rail,Trucking
@@ -111,11 +111,11 @@ Centrais Eletricas Brasileiras SA,ELET3,B3 S.A.,Utilities,Utilities,Electric Uti
 Cheesecake Factory Inc,CAKE,Nasdaq,Consumer Discretionary,Consumer Services,Hotels Restaurants and Leisure,Restaurants
 Chevron Corp,CVX,New York Stock Exchange Inc.,Energy,Energy,Oil Gas and Consumable Fuels,Integrated Oil and Gas
 China Automotive Systems Inc,CAAS,Nasdaq,Consumer Discretionary,Automobiles and Components,Auto Components,Auto Parts and Equipment
-China Construction Bank Corp,00939,Hong Kong Exchanges And Clearing Ltd,Financials,Banks,Banks,Diversified Banks
+China Construction Bank Corp,0939,Hong Kong Exchanges And Clearing Ltd,Financials,Banks,Banks,Diversified Banks
 China Eastern Airlines Corp Ltd,CEA,New York Stock Exchange Inc.,Industrials,Transportation,Airlines,Airlines
-China Finance Online Co Ltd,JRJC,Nasdaq,Financials,Diversified Financials,Capital Markets,Investment Banking and Brokerage
-China Gas Holdings Ltd,00384,Hong Kong Exchanges And Clearing Ltd,Utilities,Utilities,Gas Utilities,Gas Utilities
-China Mobile Ltd,00941,Hong Kong Exchanges And Clearing Ltd,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services
+China Finance Online Co Ltd,JRJCY,Nasdaq,Financials,Diversified Financials,Capital Markets,Investment Banking and Brokerage
+China Gas Holdings Ltd,0384,Hong Kong Exchanges And Clearing Ltd,Utilities,Utilities,Gas Utilities,Gas Utilities
+China Mobile Ltd,0941,Hong Kong Exchanges And Clearing Ltd,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services
 China Natural Resources Inc,CHNR,Nasdaq,Materials,Materials,Metals and Mining,Diversified Metals and Mining
 China Petroleum & Chemical Corp,SNP,New York Stock Exchange Inc.,Energy,Energy,Oil Gas and Consumable Fuels,Integrated Oil and Gas
 China Southern Airlines Co Ltd,ZNH,New York Stock Exchange Inc.,Industrials,Transportation,Airlines,Airlines
@@ -172,7 +172,7 @@ eClerx Services Ltd,532927,BSE LTD,Information Technology,Software and Services,
 Embraer SA,EMBR3,B3 S.A.,Industrials,Capital Goods,Aerospace and Defense,Aerospace and Defense
 Enbridge Inc,ENB,New York Stock Exchange Inc.,Energy,Energy,Oil Gas & Consumable Fuels,Oil & Gas Storage & Transportation
 Endeavor Group Holdings,EDR,New York Stock Exchange Inc.,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment
-Endo International PLC,ENDP,Nasdaq,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals
+Endo International PLC,ENDP,OTCMKTS,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals
 Energy Transfer LP,ET,New York Stock Exchange Inc.,Energy,Energy,Oil Gas and Consumable Fuels,Oil and Gas Storage and Transportation
 Enghouse Systems Ltd,ENGH,Toronto Stock Exchange,Information Technology,Software and Services,Software,Application Software
 ENGIE Brasil Energia SA,EGIE3,B3 S.A.,Utilities,Utilities,Independent Power and Renewable Electricity Producers,Renewable Electricity
@@ -181,7 +181,7 @@ ETSY Inc,ETSY,Nasdaq,Consumer Discretionary,Retailing,Internet & Catalog Retail,
 Experian PLC,EXPN,London Stock Exchange,Industrials,Commercial Services and Supplies,Professional Services,Research and Consulting Services
 Extra Space Storage Inc,EXR,New York Stock Exchange Inc.,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Specialized REITs
 Exxon Mobil Corp,XOM,New York Stock Exchange Inc.,Energy,Energy,Oil Gas and Consumable Fuels,Integrated Oil and Gas
-Facebook Inc,FB,Nasdaq,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services
+Facebook Inc,FB,SWX,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services
 Fair Isaac Corp,FICO,New York Stock Exchange Inc.,Information Technology,Software and Services,Software,Application Software
 Fairfax Financial Holdings Ltd,FFH,Toronto Stock Exchange,Financials,Insurance,Insurance,Multi-line Insurance
 Ferguson PLC,FERG,London Stock Exchange,Industrials,Capital Goods,Trading Companies and Distributors,Trading Companies and Distributors
@@ -361,7 +361,7 @@ Pfizer Inc,PFE,New York Stock Exchange Inc.,Health Care,Pharmaceuticals and Biot
 PG&E Corp,PCG,New York Stock Exchange Inc.,Utilities,Utilities,Electric Utilities,Electric Utilities
 Phillips 66,PSX,New York Stock Exchange Inc.,Energy,Energy,Oil Gas and Consumable Fuels,Oil and Gas Refining and Marketing
 Physicians Realty Trust,DOC,New York Stock Exchange Inc.,Real Estate,Real Estate,Equity Real Estate Investment Trusts (REITs),Health Care REITs
-Ping An Insurance (Group) Co. of China Ltd,02318,Hong Kong Exchanges And Clearing Ltd,Financials,Insurance,Insurance,Life and Health Insurance
+Ping An Insurance (Group) Co. of China Ltd,601318,SHA,Financials,Insurance,Insurance,Life and Health Insurance
 Piramal Enterprises Ltd,500302,BSE LTD,Financials,Diversified Financials,Diversified Financial Services,Specialized Finance
 Planet Fitness Inc,PLNT,New York Stock Exchange Inc.,Consumer Discretionary,Consumer Services,Hotels Restaurants and Leisure,Leisure Facilities
 PNC Financial Services Group Inc,PNC,New York Stock Exchange Inc.,Financials,Banks,Banks,Regional Banks
@@ -390,9 +390,9 @@ Rio Tinto PLC,RIO,London Stock Exchange,Materials,Materials,Metals and Mining,Di
 Ritchie Bros Auctioneers Inc,RBA,New York Stock Exchange Inc.,Industrials,Commercial Services and Supplies,Commercial Services and Supplies,Diversified Support Services
 Rite Aid Corp,RAD,New York Stock Exchange Inc.,Consumer Staples,Food and Staples Retailing,Food and Staples Retailing,Drug Retail
 Rogers Communications-CL B,RCI,New York Stock Exchange Inc.,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services
-Rolls-Royce Holdings PLC,RR.,London Stock Exchange,Industrials,Capital Goods,Aerospace and Defense,Aerospace and Defense
+Rolls-Royce Holdings PLC,RR,London Stock Exchange,Industrials,Capital Goods,Aerospace and Defense,Aerospace and Defense
 Royal Bank of Canada,RY,Toronto Stock Exchange,Financials,Banks,Commercial Banks,Diversified Banks
-Royal Dutch Shell PLC,RDSA,London Stock Exchange,Energy,Energy,Oil Gas and Consumable Fuels,Integrated Oil and Gas
+Royal Dutch Shell PLC,RDSA,SWX,Energy,Energy,Oil Gas and Consumable Fuels,Integrated Oil and Gas
 Royal Gold Inc,RGLD,Nasdaq,Materials,Materials,Metals and Mining,Gold
 Rumo SA,RAIL3,B3 S.A.,Industrials,Transportation,Road and Rail,Railroads
 Sage Group (The) PLC,SGE,London Stock Exchange,Information Technology,Software and Services,Software,Application Software
@@ -410,7 +410,7 @@ Sirius XM Holdings Inc,SIRI,Nasdaq,Communication Services,Media & Entertainment,
 SJVN Ltd,533206,BSE LTD,Utilities,Utilities,Electric Utilities,Electric Utilities
 SJW Group,SJW,New York Stock Exchange Inc.,Utilities,Utilities,Water Utilities,Water Utilities
 SkyWest Inc,SKYW,Nasdaq,Industrials,Transportation,Airlines,Airlines
-Smith & Nephew PLC,SN.,London Stock Exchange,Health Care,Health Care Equipment and Services,Health Care Equipment and Supplies,Health Care Equipment
+Smith & Nephew PLC,SN,London Stock Exchange,Health Care,Health Care Equipment and Services,Health Care Equipment and Supplies,Health Care Equipment
 Smith & Wesson Brands Inc,SWBI,Nasdaq,Consumer Discretionary,Consumer Durables and Apparel,Leisure Products,Leisure Products
 Smiths Group PLC,SMIN,London Stock Exchange,Industrials,Capital Goods,Industrial Conglomerates,Industrial Conglomerates
 Snap-on Inc,SNA,New York Stock Exchange Inc.,Industrials,Capital Goods,Machinery,Industrial Machinery
@@ -443,7 +443,7 @@ Tata Steel Ltd,500470,BSE LTD,Materials,Materials,Metals and Mining,Steel
 TC Energy Corp,TRP,New York Stock Exchange Inc.,Energy,Energy,Oil Gas & Consumable Fuels,Oil & Gas Storage & Transportation
 Tech Mahindra Ltd,532755,BSE LTD,Information Technology,Software and Services,IT Services,IT Consulting and Other Services
 TELUS Corp,TU,New York Stock Exchange Inc.,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services
-Tencent Holdings Ltd,00700,Hong Kong Exchanges And Clearing Ltd,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services
+Tencent Holdings Ltd,0700,Hong Kong Exchanges And Clearing Ltd,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services
 Tesla Inc,TSLA,Nasdaq,Consumer Discretionary,Automobiles and Components,Automobiles,Automobile Manufacturers
 Teva Pharmaceutical Industries Ltd,TEVA,New York Stock Exchange Inc.,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals
 Texas Instruments Inc,TXN,Nasdaq,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors
@@ -478,7 +478,7 @@ Unilever PLC,ULVR,London Stock Exchange,Consumer Staples,Household and Personal 
 Unilever PLC,UL,New York Stock Exchange Inc.,Consumer Staples,Household and Personal Products,Personal Products,Personal Products
 United Natural Foods Inc,UNFI,New York Stock Exchange Inc.,Consumer Staples,Food and Staples Retailing,Food and Staples Retailing,Food Distributors
 United States Steel Corp,X,New York Stock Exchange Inc.,Materials,Materials,Metals and Mining,Steel
-United Utilities Group PLC,UU.,London Stock Exchange,Utilities,Utilities,Water Utilities,Water Utilities
+United Utilities Group PLC,UU,London Stock Exchange,Utilities,Utilities,Water Utilities,Water Utilities
 UnitedHealth Group Inc,UNH,New York Stock Exchange Inc.,Health Care,Health Care Equipment and Services,Health Care Providers and Services,Managed Health Care
 Urban Outfitters Inc,URBN,Nasdaq,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail
 UTStarcom Holdings Corp,UTSI,Nasdaq,Information Technology,Technology Hardware and Equipment,Communications Equipment,Communications Equipment
@@ -505,7 +505,7 @@ Wipro Ltd,507685,BSE LTD,Information Technology,Software and Services,IT Service
 Wuliangye Yibin Co Ltd,000858,Shenzhen Stock Exchange,Consumer Staples,Food Beverage and Tobacco,Beverages,Distillers and Vintners
 Wyndham Hotels & Resorts Inc,WH,New York Stock Exchange Inc.,Consumer Discretionary,Consumer Services,Hotels Restaurants and Leisure,Hotels Resorts and Cruise Lines
 Wynnstay Group PLC,WYN,London Stock Exchange,Consumer Staples,Food Beverage and Tobacco,Food Products,Agricultural Products
-Xerox Holdings Corp,XRX,New York Stock Exchange Inc.,Information Technology,Technology Hardware & Equipment,Technology Hardware Storage & Peripherals,Technology Hardware Storage & Peripherals
+Xerox Holdings Corp,XRX,Nasdaq,Information Technology,Technology Hardware & Equipment,Technology Hardware Storage & Peripherals,Technology Hardware Storage & Peripherals
 Yes Bank Ltd,532648,BSE LTD,Financials,Banks,Banks,Diversified Banks
 Yum Brands Inc,YUM,New York Stock Exchange Inc.,Consumer Discretionary,Consumer Services,Hotels Restaurants and Leisure,Restaurants
 Zogenix Inc,ZGNX,Nasdaq,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals
