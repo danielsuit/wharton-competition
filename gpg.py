@@ -1,9 +1,5 @@
 from bs4 import BeautifulSoup as BS
-from dotenv import load_dotenv
-from matplotlib import pyplot as plt
-import requests, csv, pandas as pd, lxml, os, numpy as np
-from io import StringIO
-from lxml import html
+import requests
 from exchangeConversion import *
 from currencyConversion import *
 headers = {
