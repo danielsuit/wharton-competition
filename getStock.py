@@ -8,46 +8,47 @@ import csv
 #print(stocks.head)
 from bs4 import BeautifulSoup as BS
 import requests
-headers = {
-   'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'
-}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'}
+import datetime
+start = datetime.datetime.now()
+print(start)
 def exchangeConversion(exchange):
    if exchange == 'B3 S.A.':
-      exchange = 'BVMF'
+      return 'BVMF'
    elif exchange == 'BSE LTD':
-      exchange = 'BOM'
+      return 'BOM'
    elif exchange == 'Hong Kong Exchanges And Clearing Ltd':
-      exchange = 'HKG'
+      return 'HKG'
    elif exchange == 'London Stock Exchange':
-      exchange = 'LON'
+      return 'LON'
    elif exchange == 'Nasdaq':
-      exchange = 'NASDAQ'
-   elif exchange == "New York Stock Exchange Inc.":
-      exchange = 'NYSE'
+      return 'NASDAQ'
+   elif exchange == 'New York Stock Exchange Inc.':
+      return 'NYSE'
    elif exchange == 'Shanghai Stock Exchange':
-      exchange = 'SHA'
+      return 'SHA'
    elif exchange == 'Shenzhen Stock Exchange':
-      exchange = "SHE"
+      return 'SHE'
    elif exchange == 'Toronto Stock Exchange':
-      exchange = "TSE"
+      return 'TSE'
    return exchange
 def currencyConversion(price):
    if price[0] == '$':
       price = price.replace(',', '')
-      price = float(price[1:])
+      return round(float(price[1:]),2)
    elif price[0] == '₹':
       price = price.replace(',', '')
-      price = float(price[1:])*0.012
+      return round(float(price[1:])*0.012,2)
    elif price[0:2] == 'R$':
       price = price.replace(',', '')
-      price = float(price[2:])*0.19
+      return round(float(price[2:])*0.19,2)
    elif price[0] == '¥':
       price = price.replace(',', '')
-      price = float(price[1:])*0.14
+      return round(float(price[1:])*0.14,2)
    elif price[0:3] == 'GBX':
       price = price.replace(',','')
-      price = float(price[6:])*0.0113
-   return round(price, 2)
+      return round(float(price[6:])*0.0113,2)
+   return float(price)
 def getPrice(ticker, exchange):
    exchange = exchangeConversion(exchange)
    url = 'https://www.google.com/finance/quote/{}:{}'
@@ -55,10 +56,9 @@ def getPrice(ticker, exchange):
    soup = BS(response, 'lxml')
    try:
       match = soup.find('div', class_='YMlKec fxKbKc').text
-      match = currencyConversion(match)
+      return currencyConversion(match)
    except:
       return 0
-   return match
 class GetStock:
    def __init__(self, number, name, ticker, exchange, industryGroup, industry, subIndustry, no):
       self.number = number;
@@ -76,19 +76,17 @@ with open("stocklist.csv") as csvfile:
    reader = csv.reader(csvfile, quoting=csv.QUOTE_NONE);
    for row in reader:
       stockList.append(row);
-for i in range(len(stockList)):
-   x = GetStock(i, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6])
 def sortStockList(stocklist):
+   results = []
    for i in range(len(stockList)):
-      stocklist[i] = stockList[i][1], stockList[i][0], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]
-      #ticker, name, exchange, industryGroup, industry, subIndustry
-   return stockList
+      results.append([stockList[i][1], stockList[i][0], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
+   return results
 def insertPrice(stocklist):
    stockList = sortStockList(stocklist)
    for i in range(len(stockList)):
       price = getPrice(stockList[i][0], stocklist[i][2])  
       stockList[i] = [price, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]]
-      print(stockList[i])
    stockList.sort()
+   print(datetime.datetime.now()-start)
    print(stockList)
 insertPrice(stockList)
