@@ -36,7 +36,7 @@ def sortStockList(stocklist):
 def insertPrice(stocklist):
    stockList = sortStockList(stocklist)
    for i in range(len(stockList)):
-      price = getPrice(stockList[i][0], stocklist[i][2]) 
+      price = getPrice(stockList[i][0], stocklist[i][2])  
       stockList[i] = [price, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]]
       print(stockList[i])
 insertPrice(stockList)
