@@ -16,3 +16,4 @@ def getPrice(ticker, exchange):
    except:
       return 0
    return match
+ 
