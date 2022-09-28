@@ -28,36 +28,57 @@ with open("stocklist.csv") as csvfile:
    for row in reader:
       stockList.append(row);
 def getClimateScore(ticker, exchange):
-   exchange = exchangeConversion(exchange)
-   url = 'https://www.google.com/finance/quote/{}:{}'
-   response = requests.get(url.format(ticker, exchange), headers=headers).text
-   soup = BS(response, 'lxml')
    try:
-      match = soup.find_all("div", class_="P6K39c")
-      for i in match:
-         try:
-            if soup.find_next("div", class_="P6K39c") == 'A':
-               print('A')
-               return 'A'
-         except:
-            continue
-      print(match)
-      return match
+      s = BS(requests.get(BS(requests.get('https://www.google.com/finance/quote/{}:{}'.format(ticker, exchangeConversion(exchange)), headers=headers).text, 'lxml').find("div", class_="fvysid").find('a')['href']+"?per_page=20&sort_by=project_year&sort_dir=desc").text, 'lxml')
+      try:
+         cc = s.find('div', class_='investor-program__score_band--climate-change investor-program__score_band_single tooltip-top').text.replace('\n', '')
+      except:
+         cc = 'None'
+      try:
+         forests = s.find('div', class_='investor-program__score_band--forests investor-program__score_band_single tooltip-top').text.replace('\n', '')
+      except:
+         forests = 'None'
+      try:
+         water = s.find('div', class_='investor-program__score_band--water investor-program__score_band_single tooltip-top').text.replace('\n', '')
+      except:
+         water = 'None'
+      print([cc, forests, water])
+      return [cc, forests, water]
    except:
-      return 0
+      print("None")
+      return "None"
 def sortStockList(stocklist):
    results = []
    for i in range(len(stockList)):
       results.append([stockList[i][1], stockList[i][0], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
    return results
 def insertClimateScore(stocklist):
-   stockList = sortStockList(stocklist)
-   results = []
+   stockList = sortStockList(stocklist);
+   results = [];
+   scoreA = [];
+   scoreB = [];
+   scoreC = [];
+   scoreD = [];
+   scoreF = [];
    for i in range(len(stockList)):
       climateScore = getClimateScore(stockList[i][0], stocklist[i][2])
-      print(climateScore)  
+      if climateScore[0] == "A" or climateScore[0] == "A-":
+         scoreA.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
+      elif climateScore[0] == "B" or climateScore[0] == "B-":
+         scoreB.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
+      elif climateScore[0] == "C" or climateScore[0] == "C-":
+         scoreC.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
+      elif climateScore[0] == "D" or climateScore[0] == "D-":
+         scoreD.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
+      elif climateScore[0] == "F":
+         scoreF.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
       results.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
    print(datetime.datetime.now()-start)
+   print("A: "+str(scoreA))
+   print("B: "+str(scoreB))
+   print("C: "+str(scoreC))
+   print("D: "+str(scoreD))
+   print("F: "+str(scoreF))
    print(results)
 insertClimateScore(stockList)
 class ESGRating:
