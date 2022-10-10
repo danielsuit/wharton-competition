@@ -1,52 +1,12 @@
 from bs4 import BeautifulSoup as BS
 import requests, csv, datetime, threading
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'}
 start = datetime.datetime.now()
 print(start)
-def exchangeConversion(exchange):
-   if exchange == 'B3 S.A.':
-      return 'BVMF'
-   elif exchange == 'BSE LTD':
-      return 'BOM'
-   elif exchange == 'Hong Kong Exchanges And Clearing Ltd':
-      return 'HKG'
-   elif exchange == 'London Stock Exchange':
-      return 'LON'
-   elif exchange == 'Nasdaq':
-      return 'NASDAQ'
-   elif exchange == 'New York Stock Exchange Inc.':
-      return 'NYSE'
-   elif exchange == 'Shanghai Stock Exchange':
-      return 'SHA'
-   elif exchange == 'Shenzhen Stock Exchange':
-      return 'SHE'
-   elif exchange == 'Toronto Stock Exchange':
-      return 'TSE'
 stockList = [];
 with open("stocklist.csv") as csvfile:
    reader = csv.reader(csvfile, quoting=csv.QUOTE_NONE);
    for row in reader:
       stockList.append(row);
-def getClimateScore(ticker, exchange):
-   try:
-      s = BS(requests.get(BS(requests.get('https://www.google.com/finance/quote/{}:{}'.format(ticker, exchangeConversion(exchange)), headers=headers).text, 'lxml').find("div", class_="fvysid").find('a')['href']+"?per_page=20&sort_by=project_year&sort_dir=desc").text, 'lxml')
-      try:
-         cc = s.find('div', class_='investor-program__score_band--climate-change investor-program__score_band_single tooltip-top').text.replace('\n', '')
-      except:
-         cc = 'None'
-      try:
-         forests = s.find('div', class_='investor-program__score_band--forests investor-program__score_band_single tooltip-top').text.replace('\n', '')
-      except:
-         forests = 'None'
-      try:
-         water = s.find('div', class_='investor-program__score_band--water investor-program__score_band_single tooltip-top').text.replace('\n', '')
-      except:
-         water = 'None'
-      print([cc, forests, water])
-      return [cc, forests, water]
-   except:
-      print("None")
-      return "None"
 def sortStockList(stocklist):
    results = []
    for i in range(len(stockList)):
@@ -74,12 +34,19 @@ def insertClimateScore(stocklist):
          scoreF.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
       results.append([climateScore, stockList[i][0], stockList[i][1], stockList[i][2], stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]])
    print(datetime.datetime.now()-start)
-   print("A: "+str(scoreA))
-   print("B: "+str(scoreB))
-   print("C: "+str(scoreC))
-   print("D: "+str(scoreD))
-   print("F: "+str(scoreF))
-   print(results)
+   try:
+      for i in scoreA:
+         print(str(i)+"Company name: "+str(scoreA[1])+": Climate Score: "+str(scoreA[0][0])+"Ticker: "+str(scoreA[2]))
+      for i in scoreB:
+         print(str(i)+"Company name: "+str(scoreB[1])+": Climate Score: "+str(scoreB[0][0])+"Ticker: "+str(scoreB[2]))
+      for i in scoreC:
+         print(str(i)+"Company name: "+str(scoreC[1])+": Climate Score: "+str(scoreC[0][0])+"Ticker: "+str(scoreC[2]))
+      for i in scoreD:
+         print(str(i)+"Company name: "+str(scoreD[1])+": Climate Score: "+str(scoreD[0][0])+"Ticker: "+str(scoreD[2]))
+      for i in scoreF:
+         print(str(i)+"Company name: "+str(scoreF[1])+": Climate Score: "+str(scoreF[0][0])+"Ticker: "+str(scoreF[2]))
+   except:
+      None
 insertClimateScore(stockList)
 class ESGRating:
    def __init__(self, score, size):
