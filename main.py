@@ -55,12 +55,12 @@ def getPrice(soup):
       return 0
 def getClimateScore(soup):
    try:
-      s = BS(requests.get(soup.find("div", class_="fvysid").find('a')['href']+"?per_page=20&sort_by=project_year&sort_dir=desc"), 'lxml')
+      s = BS(requests.get(soup.find("div", class_="fvysid").find('a')['href']+"?per_page=20&sort_by=project_year&sort_dir=desc").text, 'lxml')
       try:
          return s.find('div', class_='investor-program__score_band_single tooltip-top investor-program__score_band--climate-change').text.replace('\n','')
       except:
          return 'None'
    except:
-      return "None"
+      return 'None'
 if __name__ == '__main__':
     main()
