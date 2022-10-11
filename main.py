@@ -10,8 +10,6 @@ from bs4 import BeautifulSoup as BS
 from dotenv import load_dotenv
 from matplotlib import pyplot as plt
 from historicalData import *
-from exchangeConversion import *
-from currencyConversion import *
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'}
 with open("stocklist.csv") as csvfile:
    stockList = [];
@@ -30,6 +28,42 @@ class StockList:
       self.subIndustry = subIndustry;
    def __str__(self):
       return f"{self.number} | {self.name} | {self.ticker} | {self.exchange} | {self.sector} | {self.industryGroup} | {self.industry} | {self.subIndustry}";
+def exchangeConversion(exchange):
+   if exchange == 'B3 S.A.':
+      return 'BVMF'
+   elif exchange == 'BSE LTD':
+      return 'BOM'
+   elif exchange == 'Hong Kong Exchanges And Clearing Ltd':
+      return 'HKG'
+   elif exchange == 'London Stock Exchange':
+      return 'LON'
+   elif exchange == 'Nasdaq':
+      return 'NASDAQ'
+   elif exchange == 'New York Stock Exchange Inc.':
+      return 'NYSE'
+   elif exchange == 'Shanghai Stock Exchange':
+      return 'SHA'
+   elif exchange == 'Shenzhen Stock Exchange':
+      return 'SHE'
+   elif exchange == 'Toronto Stock Exchange':
+      return 'TSE'
+def currencyConversion(price):
+   if price[0] == '$':
+      price = price.replace(',', '')
+      return round(float(price[1:]),2)
+   elif price[0] == '₹':
+      price = price.replace(',', '')
+      return round(float(price[1:])*0.012,2)
+   elif price[0:2] == 'R$':
+      price = price.replace(',', '')
+      return round(float(price[2:])*0.19,2)
+   elif price[0] == '¥':
+      price = price.replace(',', '')
+      return round(float(price[1:])*0.14,2)
+   elif price[0:3] == 'GBX':
+      price = price.replace(',','')
+      return round(float(price[6:])*0.0113,2)
+   return float(price)
 def sortByPrice(stockList):
    results = []
    for i in range(len(stockList)):
