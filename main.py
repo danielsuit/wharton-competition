@@ -81,6 +81,11 @@ def main():
       soup = BS((requests.get(url, headers=headers).text), 'lxml')
       print(getPrice(soup))
       print(getClimateScore(soup))
+      try:
+         match = soup.find('div', class_="QXDnM").text
+         print(match)
+      except:
+         None
 def getPrice(soup):
    try:
       match = soup.find('div', class_='YMlKec fxKbKc').text
