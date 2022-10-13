@@ -19,7 +19,6 @@ def marketCap(ticker):
 	jsonData = json.loads(scriptData[start:-12])
 	try:
 		return jsonData['context']['dispatcher']['stores']['QuoteSummaryStore']['price']['marketCap']['longFmt']
-      
 	except KeyError:
 		return 0
 print(marketCap("MSFT"))

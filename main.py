@@ -6,6 +6,8 @@ import tensorflow_hub as hub
 import numpy as np
 import pandas as pd
 import requests
+import re
+import json
 from bs4 import BeautifulSoup as BS
 from dotenv import load_dotenv
 from matplotlib import pyplot as plt
@@ -81,11 +83,7 @@ def main():
       soup = BS((requests.get(url, headers=headers).text), 'lxml')
       print(getPrice(soup))
       print(getClimateScore(soup))
-      try:
-         match = soup.find('div', class_="QXDnM").text
-         print(match)
-      except:
-         None
+      print(marketCap(stock.ticker))
 def getPrice(soup):
    try:
       match = soup.find('div', class_='YMlKec fxKbKc').text
@@ -101,5 +99,24 @@ def getClimateScore(soup):
          return 'None'
    except:
       return 'None'
+def stats(ticker):
+   urlStats = 'https://finance.yahoo.com/quote/{}/key-statistics?={}'
+   response = requests.get(urlStats.format(ticker, ticker), headers=headers)
+   getData(response)
+   
+def marketCap(ticker):
+	
+def getData(url)
+	urlFinancials = 'https://finance.yahoo.com/quote/{}/financials?p={}'
+	
+	soup = BS(response.text, 'html.parser')
+	pattern = re.compile(r'\s--\sData\s--\s')
+	scriptData = soup.find('script', text=pattern).contents[0]
+	start = scriptData.find('context')-2
+	jsonData = json.loads(scriptData[start:-12])
+	try:
+		return jsonData['context']['dispatcher']['stores']['QuoteSummaryStore']['price']['marketCap']['longFmt']
+	except KeyError:
+		return 0
 if __name__ == '__main__':
     main()
