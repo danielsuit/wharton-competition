@@ -86,6 +86,11 @@ def main():
          print(match)
       except:
          None
+      statsData = getData(stats(ticker))
+      financialsData = getData(financials(ticker))
+      marketCap(statsData)
+      profibility(statsData)
+      marketShare(financialsData)
 def getPrice(soup):
    try:
       match = soup.find('div', class_='YMlKec fxKbKc').text
@@ -101,5 +106,31 @@ def getClimateScore(soup):
          return 'None'
    except:
       return 'None'
+def stats():
+   return 'https://finance.yahoo.com/quote/{}/key-statistics?={}'
+def financials():
+   return 'https://finance.yahoo.com/quote/{}/financials?p={}'
+def getData(url):
+   response = requests.get(url.format(ticker, ticker), headers=headers)
+   soup = BS(response.text, 'html.parser')
+   pattern = re.compile(r'\s--\sData\s--\s')
+   scriptData = soup.find('script', text=pattern).contents[0]
+   start = scriptData.find('context')-2
+   return json.loads(scriptData[start:-12])
+def marketShare(financialsData):
+	try:
+		return 100 * (financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['revenue']['raw']-financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['earnings']['raw'])/financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['revenue']['raw']  
+	except KeyError:
+		return 0
+def marketCap(statsData):
+   try:
+      return statsData['context']['dispatcher']['stores']['QuoteSummaryStore']['price']['marketCap']['longFmt']
+   except:
+      return 0
+def profibility(statsData):
+	try:
+		return statsData['context']['dispatcher']['stores']['QuoteSummaryStore']['financialData']['profitMargins']['raw']
+	except KeyError:
+		return 0
 if __name__ == '__main__':
     main()
