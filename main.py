@@ -116,11 +116,11 @@ def main():
          print(match);
       except:
          None;
-      statsData = getData(stats(stock.ticker))
-      financialsData = getData(financials(stock.ticker));
-      print(marketCap(statsData));
-      print(profibility(statsData));
-      print(marketShare(financialsData));
+      statsData = getData(stats(), stock.ticker)
+      financialsData = getData(financials(), stock.ticker);
+      print("Marketcap: "+str(marketCap(statsData)));
+      print("Profibility: "+str(profibility(statsData)));
+      print("Marketshare: "+str(marketShare(financialsData)));
 def getPrice(soup):
    try:
       match = soup.find('div', class_='YMlKec fxKbKc').text;
