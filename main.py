@@ -10,13 +10,14 @@ import json;
 import re;
 from bs4 import BeautifulSoup as BS;
 from dotenv import load_dotenv;
-from matplotlib import pyplot as plt;
+from matplotlib import pyplot as plt;  
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'}
 with open("stocklist.csv") as csvfile:
    stockList = [];
    reader = csv.reader(csvfile, quoting=csv.QUOTE_NONE);
    for row in reader:
       stockList.append(row);
+
 class StockList:
    def __init__(self, number, name, ticker, exchange, sector, industryGroup, industry, subIndustry):
       self.number = number;
@@ -101,6 +102,7 @@ def sortByPrice(stockList):
    return results;
 def sortByESG(stockList):
    results = [];
+
 def main():
    start = datetime.datetime.now();
    print(start);
@@ -109,18 +111,15 @@ def main():
       print(stock.number, stock.name);
       url = 'https://www.google.com/finance/quote/{}:{}'.format(stock.ticker, stock.exchange);
       soup = BS((requests.get(url, headers=headers).text), 'lxml');
-      print(getPrice(soup));
-      print(getClimateScore(soup));
+      statsData = getData(stats(), stock.ticker)
+      financialsData = getData(financials(), stock.ticker);
+      data = [stock.number, stock.ticker, str(getPrice(soup)), getClimateScore(soup), stock.name, stock.exchange, stock.sector, stock.industryGroup, stock.industry, stock.subIndustry, str(marketCap(statsData)), str(profibility(statsData)), str(marketShare(financialsData))]
+      writer.writerow(data)
       try:
          match = soup.find('div', class_="QXDnM").text;
          print(match);
       except:
          None;
-      statsData = getData(stats(), stock.ticker)
-      financialsData = getData(financials(), stock.ticker);
-      print("Marketcap: "+str(marketCap(statsData)));
-      print("Profibility: "+str(profibility(statsData)));
-      print("Marketshare: "+str(marketShare(financialsData)));
 def getPrice(soup):
    try:
       match = soup.find('div', class_='YMlKec fxKbKc').text;
@@ -162,5 +161,7 @@ def profibility(statsData):
 		return statsData['context']['dispatcher']['stores']['QuoteSummaryStore']['financialData']['profitMargins']['raw'];
 	except KeyError:
 		return 0;
-if __name__ == '__main__':
-    main();
+with open("data.csv", "w") as file:
+   writer = csv.writer(file)
+   main()
+
