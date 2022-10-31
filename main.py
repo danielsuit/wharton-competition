@@ -108,18 +108,25 @@ def main():
    print(start);
    for i in range(len(stockList)):
       stock = StockList(i, stockList[i][0], stockList[i][1], exchangeConversion(stockList[i][2]), stockList[i][3], stockList[i][4], stockList[i][5], stockList[i][6]);
-      print(stock.number, stock.name);
+      #print(stock.number, stock.name);
       url = 'https://www.google.com/finance/quote/{}:{}'.format(stock.ticker, stock.exchange);
       soup = BS((requests.get(url, headers=headers).text), 'lxml');
       statsData = getData(stats(), stock.ticker)
       financialsData = getData(financials(), stock.ticker);
-      data = [stock.number, stock.ticker, str(getPrice(soup)), getClimateScore(soup), stock.name, stock.exchange, stock.sector, stock.industryGroup, stock.industry, stock.subIndustry, str(marketCap(statsData)), str(profibility(statsData)), str(marketShare(financialsData))]
+      list = []
+      data = [profibility(statsData)*100, stock.name]
+      print(data)
+      list.append(data)
       writer.writerow(data)
+      #data = [stock.number, stock.ticker, str(getPrice(soup)), getClimateScore(soup), stock.name, stock.exchange, stock.sector, stock.industryGroup, stock.industry, stock.subIndustry, str(marketCap(statsData)), str(profibility(statsData)), str(marketShare(financialsData))]
+      #writer.writerow(data)
       try:
          match = soup.find('div', class_="QXDnM").text;
          print(match);
       except:
          None;
+   list.sort()
+   print(list)
 def getPrice(soup):
    try:
       match = soup.find('div', class_='YMlKec fxKbKc').text;
@@ -146,16 +153,16 @@ def getData(url, ticker):
    scriptData = soup.find('script', text=pattern).contents[0];
    start = scriptData.find('context')-2;
    return json.loads(scriptData[start:-12]);
-def marketShare(financialsData):
-	try:
-		return 100 * (financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['revenue']['raw']-financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['earnings']['raw'])/financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['revenue']['raw'];  
-	except KeyError:
-		return 0;
-def marketCap(statsData):
-   try:
-      return statsData['context']['dispatcher']['stores']['QuoteSummaryStore']['price']['marketCap']['longFmt'];
-   except:
-      return 0;
+#def marketShare(financialsData):
+	#try:
+		#return 100 * (financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['revenue']['raw']-financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['earnings']['raw'])/financialsData['context']['dispatcher']['stores']['QuoteSummaryStore']['earnings']['financialsChart']['yearly'][0]['revenue']['raw'];  
+	#except KeyError:
+		#return 0;
+#def marketCap(statsData):
+   #try:
+      #return statsData['context']['dispatcher']['stores']['QuoteSummaryStore']['price']['marketCap']['longFmt'];
+   #except:
+      #return 0;
 def profibility(statsData):
 	try:
 		return statsData['context']['dispatcher']['stores']['QuoteSummaryStore']['financialData']['profitMargins']['raw'];

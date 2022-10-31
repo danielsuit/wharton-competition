@@ -1,118 +1,307 @@
-0,Ticker,0,None,Company Name,,GICS Sector,GICS Industry Group,GICS Industry,GICS Sub-Industry,0,0,0
-1,ABT,95.06,B,Abbott Laboratories,NYSE,Health Care,Health Care Equipment & Services,Health Care Equipment & Supplies,Health Care Equipment,"166,470,959,104.00",0.17518999,92.25587023350121
-2,ABBV,147.06,B,AbbVie Inc,NYSE,Health Care,Pharmaceuticals and Biotechnology,Biotechnology,Biotechnology,"260,016,783,360.00",0.22035,82.63670503465332
-3,ANF,16.94,C,Abercrombie & Fitch Co,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,"837,744,000.00",0.021559998,97.92371206556682
-4,ACHC,77.51,None,Acadia Healthcare Co Inc,NASDAQ,Health Care,Health Care Equipment and Services,Health Care Providers and Services,Health Care Facilities,"7,041,085,952.00",0.11322,109.22719910536857
-5,ATVI,72.71,None,Activision Blizzard Inc,NASDAQ,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,"56,881,541,120.00",0.24568,75.36
-6,ADBE,306.37,A-,Adobe Inc,NASDAQ,Information Technology,Software and Services,Software,Application Software,"142,431,404,032.00",0.27997,71.30675526024363
-7,AMD,58.82,B,Advanced Micro Devices,NASDAQ,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,"94,954,299,392.00",0.14507,94.79536679536679
-8,AMTX,7.28,None,Aemetis Inc,NASDAQ,Energy,Energy,Oil Gas and Consumable Fuels,Oil and Gas Refining and Marketing,"251,772,976.00",-0.15925999,119.2483938295069
-9,AFL,60.97,B-,Aflac Inc,NYSE,Financials,Insurance,Insurance,Life and Health Insurance,"38,527,922,176.00",0.20365,86.57964886478537
-10,AC,18.49,B-,Air Canada,TSE,Industrials,Transportation,Airlines,Airlines,"902,459,200.00",-1.65463,0
-11,APD,241.29,B,Air Products & Chemicals Inc,NYSE,Materials,Materials,Chemicals,Industrial Gases,"53,517,881,344.00",0.19076,83.22769926765358
-12,BABA,72.18,None,Alibaba Group Holding Ltd,NYSE,Consumer Discretionary,Retailing,Internet & Direct Marketing Retail,Internet & Direct Marketing Retail,"191,099,437,056.00",0.04671,76.6784133487597
-13,ATD,58.19,D,Alimentation Couche-Tard Inc,TSE,Consumer Staples,Food and Staples Retailing,Food and Staples Retailing,Food Retail,0,0,0
-14,ALL,120.08,B,Allstate Corp,NYSE,Financials,Insurance,Insurance,Property and Casualty Insurance,"32,457,144,320.00",0.0199,94.57490895391184
-15,GOOG,101.48,A-,Alphabet Inc,NASDAQ,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,"1,321,300,131,840.00",0.25892,77.53528384215643
-16,ACH,0,None,Aluminum Corporation of China Ltd,,Materials,Materials,Metals and Mining,Aluminum,0,0,0
-17,AMZN,119.32,None,Amazon.com Inc,NASDAQ,Consumer Discretionary,Retailing,Internet & Direct Marketing Retail,Internet & Direct Marketing Retail,"1,215,584,403,456.00",0.02389,95.67472636944098
-18,ABEV3,2.91,None,Ambev SA,BVMF,Consumer Staples,Food Beverage and Tobacco,Beverages,Brewers,0,0,0
-19,AMC,6.49,None,AMC Entertainment Holdings,NYSE,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,"3,331,511,552.00",-0.21034001,97.98381189569294
-20,AAL,13.71,A-,American Airlines Group Inc,NASDAQ,Industrials,Transportation,Airlines,Airlines,"8,910,142,464.00",-0.03557,96.82988707033968
-21,AEO,10.37,None,American Eagle Outfitters Inc,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,"1,942,653,568.00",0.03812,93.51040210916516
-22,AEP,85.63,B,American Electric Power Co Inc,NASDAQ,Utilities,Utilities,Electric Utilities,Electric Utilities,"43,991,044,096.00",0.14367,88.12153843304087
-23,AXP,140.04,A-,American Express Co,NYSE,Financials,Diversified Financials,Consumer Finance,Consumer Finance,"104,994,701,312.00",0.15438,81.2875141945601
-24,AWK,132.76,B,American Water Works Co Inc,NYSE,Utilities,Utilities,Water Utilities,Water Utilities,"24,133,908,480.00",0.33987,83.51744186046511
-25,AMGN,251.94,B,Amgen Inc,NASDAQ,Health Care,Pharmaceuticals and Biotechnology,Biotechnology,Biotechnology,"134,770,515,968.00",0.24924,64.65237714237588
-26,AMN,114.89,None,AMN Healthcare Services Inc,NYSE,Health Care,Health Care Equipment and Services,Health Care Providers and Services,Health Care Services,"4,971,589,120.00",0.08813,93.36441527774787
-27,0914,24.5,None,Anhui Conch Cement Co Ltd,HKG,Materials,Materials,Construction Materials,Construction Materials,0,0,0
-28,AAPL,147.27,A-,Apple Inc,NASDAQ,Information Technology,Technology Hardware and Equipment,Technology Hardware Storage and Peripherals,Technology Hardware Storage and Peripherals,"2,366,746,918,912.00",0.25709,77.58579792541275
-29,APTV,87.04,B,Aptiv PLC,NYSE,Consumer Discretionary,Automobiles and Components,Auto Components,Auto Parts and Equipment,"23,582,007,296.00",0.010980001,92.60824385174922
-30,ARCB,73.49,None,ArcBest Corp,NASDAQ,Industrials,Transportation,Road and Rail,Trucking,"1,802,643,456.00",0.061100002,97.82590145155389
-31,ANET,110.52,C,Arista Networks Inc,NYSE,Information Technology,Technology Hardware and Equipment,Communications Equipment,Communications Equipment,"33,962,795,008.00",0.29552,84.74854848238493
-32,APAM,26.71,None,Artisan Partners Asset Management Inc,NYSE,Financials,Diversified Financials,Capital Markets,Asset Management and Custody Banks,"1,800,593,280.00",0.24106,80.89520717806995
-33,ASGN,91.88,None,ASGN Inc,NYSE,Industrials,Commercial Services and Supplies,Professional Services,Human Resource and Employment Services,"4,612,376,064.00",0.10005999,95.36149185246191
-34,ASH,99.99,B-,Ashland Global Holdings Inc,NYSE,Materials,Materials,Chemicals,Specialty Chemicals,"5,481,271,808.00",0.38894,95.59675550405562
-35,500820,37.18,None,Asian Paints Ltd,BOM,Materials,Materials,Chemicals,Specialty Chemicals,0,0,0
-36,532493,3.66,None,Astra Microwave Products Ltd,BOM,Information Technology,Technology Hardware and Equipment,Communications Equipment,Communications Equipment,0,0,0
-37,AZN,54.97,A,AstraZeneca PLC,NASDAQ,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals,"170,353,131,520.00",-0.028450001,90.24445450430059
-38,T,17.1,A-,AT&T Inc,NYSE,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,"121,854,607,360.00",0.129,88.65632832814075
-39,CRFB3,3.63,None,Atacadao SA,BVMF,Consumer Staples,Food and Staples Retailing,Food and Staples Retailing,Hypermarkets and Super Centers,0,0,0
-40,500027,101.68,None,Atul Ltd,BOM,Materials,Materials,Chemicals,Diversified Chemicals,0,0,0
-41,524804,6.29,None,Aurobindo Pharma Ltd,BOM,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals,0,0,0
-42,ACB,1.51,None,Aurora Cannabis Inc,TSE,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals,"330,480,704.00",0,219.5380718102437
-43,AZO,2301.03,None,Autozone Inc,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,"44,009,500,672.00",0.14949,86.36837463522262
-44,AV,0.02,C,Aviva PLC,LON,Financials,Insurance,Insurance,Multi-line Insurance,0,0,0
-45,532215,10.8,B-,Axis Bank Ltd,BOM,Financials,Banks,Banks,Diversified Banks,0,0,0
-46,B3SA3,2.78,B,B3 SA - Brasil Bolsa Balcao,BVMF,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,0,0,0
-47,BIDU,91.23,D,Baidu Inc,NASDAQ,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,"31,610,556,416.00",-0.09825,73.45610674162711
-48,532977,44.03,None,Bajaj Auto Ltd,BOM,Consumer Discretionary,Automobiles and Components,Automobiles,Motorcycle Manufacturers,0,0,0
-49,532978,20.21,None,Bajaj Finserv Ltd,BOM,Financials,Diversified Financials,Diversified Financial Services,Other Diversified Financial Services,0,0,0
-50,BPAC11,5.43,None,Banco BTG Pactual S.A.,BVMF,Financials,Diversified Financials,Capital Markets,Diversified Capital Markets,0,0,0
-51,BBAS3,8.49,B,Banco do Brasil SA BB Brasil,BVMF,Financials,Banks,Banks,Diversified Banks,0,0,0
-52,SANB11,6.06,B,Banco Santander (Brasil) SA,BVMF,Financials,Banks,Banks,Diversified Banks,0,0,0
-53,BBDC3,3.3,B,Bank Bradesco SA,BVMF,Financials,Banks,Banks,Diversified Banks,0,0,0
-54,BAC,34.95,A-,Bank of America Corp,NYSE,Financials,Banks,Commercial Banks,Diversified Banks,"280,454,529,024.00",0.29950002,67.91925961385033
-55,002142,3.9,None,Bank Of Ningbo Co Ltd,SHE,Financials,Banks,Banks,Regional Banks,0,0,0
-56,BNS,64.85,A-,Bank of Nova Scotia,TSE,Financials,Banks,Banks,Diversified Banks,"56,647,741,440.00",0.33993,67.3291545635224
-57,OZK,40.09,None,Bank OZK,NASDAQ,Financials,Banks,Banks,Regional Banks,"4,742,967,808.00",0.48758,55.22687336504225
-58,BCS,6.66,B,Barclays PLC,NYSE,Financials,Banks,Banks,Diversified Banks,"26,394,978,304.00",0.24601999,88.05674191580232
-59,BNED,2.56,None,Barnes & Noble Education Inc,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,"134,010,880.00",-0.05014,101.19794971402845
-60,500043,21.6,None,Bata India Ltd,BOM,Consumer Discretionary,Consumer Durables and Apparel,Textiles Apparel and Luxury Goods,Footwear,0,0,0
-61,BAX,56.43,B,Baxter International Inc,NYSE,Health Care,Health Care Equipment and Services,Health Care Equipment and Supplies,Health Care Equipment,"28,418,768,896.00",0.07123,86.0708171907379
-62,BBSE3,5.54,None,BB Seguridade Participacoes SA,BVMF,Financials,Insurance,Insurance,Multi-line Insurance,0,0,0
-63,BCE,58.93,A-,BCE Inc,TSE,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,"39,395,549,184.00",0.12591,87.51917504687233
-64,BECN,53.88,None,Beacon Roofing Supply Inc,NASDAQ,Industrials,Capital Goods,Trading Companies and Distributors,Trading Companies and Distributors,"3,523,859,712.00",0.05487,101.36731624047188
-65,BBBY,4.67,None,Bed Bath & Beyond Inc,NASDAQ,Consumer Discretionary,Retailing,Specialty Retail,Homefurnishing Retail,"374,781,504.00",-0.16975,101.14079570883106
-66,BNFT,6.12,None,Benefitfocus Inc,NASDAQ,Information Technology,Software and Services,Software,Application Software,"209,527,984.00",-0.11567,120.34121698663812
-67,509480,7.03,None,Berger Paints India Ltd,BOM,Materials,Materials,Chemicals,Commodity Chemicals,0,0,0
-68,BBY,63.77,A,Best Buy Co Inc,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Computer and Electronics Retail,"14,356,604,928.00",0.03598,96.5857412719513
-69,500103,0.78,None,Bharat Heavy Electricals Ltd,BOM,Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment,0,0,0
-70,532454,9.57,C,Bharti Airtel Ltd,BOM,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,0,0,0
-71,BHP,0.18,B,BHP Group PLC,LON,Materials,Materials,Metals and Mining,Diversified Metals and Mining,"127,215,599,616.00",0.24855,91.40949245287393
-72,BILL,128.38,None,Bill.com Holdings Inc,NYSE,Information Technology,Software & Services,Software,Application Software,"13,165,883,392.00",-0.54476,111.09226855777383
-73,BLK,597.26,A-,Blackrock Inc,NYSE,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,"90,733,944,832.00",0.30117,69.67882800394422
-74,BX,85.43,None,Blackstone Inc,NYSE,Financials,Diversified Financials,Capital Markets,Asset Management and Custody Banks,"60,733,042,688.00",0.23247999,74.29047289356326
-75,BA,141.32,B,Boeing Co,NYSE,Industrials,Capital Goods,Aerospace and Defense,Aerospace and Defense,"83,053,625,344.00",-0.086890005,89.65657045101703
-76,BBD.B,34.8,None,Bombardier Inc,TSE,Industrials,Capital Goods,Aerospace and Defense,Aerospace and Defense,0,0,0
-77,BWA,34.54,B,BorgWarner Inc,NYSE,Consumer Discretionary,Automobiles and Components,Auto Components,Auto Parts and Equipment,"8,281,690,624.00",0.045700002,91.15859449192783
-78,500530,186.83,None,Bosch Ltd,BOM,Consumer Discretionary,Automobiles and Components,Auto Components,Auto Parts and Equipment,0,0,0
-79,BYD,188.04,D,Boyd Group Services Inc,TSE,Industrials,Commercial Services and Supplies,Commercial Services and Supplies,Diversified Support Services,"6,004,893,696.00",0.16033001,95.6201056065907
-80,BP,31.36,A-,BP PLC,NYSE,Energy,Energy,Oil Gas and Consumable Fuels,Integrated Oil and Gas,"103,024,500,736.00",-0.05607,96.84640023123485
-81,BRML3,1.91,None,BR Malls Participacoes SA,BVMF,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,0,0,0
-82,BRFS3,2.84,B,BRF SA,BVMF,Consumer Staples,Food Beverage and Tobacco,Food Products,Packaged Foods and Meats,0,0,0
-83,BMY,72.21,A-,Bristol-Myers Squibb Co,NYSE,Health Care,Pharmaceuticals and Biotechnology,Pharmaceuticals,Pharmaceuticals,"160,280,199,168.00",0.14036,78.19245600815567
-84,AVGO,449.73,None,Broadcom Inc,NASDAQ,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,"185,681,821,696.00",0.29763,41.19819646968534
-85,BAM,38.25,None,Brookfield Asset Management,NYSE,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,"59,983,646,720.00",0.04705,93.87235206620048
-86,BT.A,0.05,A,BT Group PLC,LON,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,0,0,0
-87,BBW,15.29,None,Build-A-Bear Workshop Inc,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Specialty Stores,"249,652,064.00",0.11675,105.32792608107907
-88,BNZL,0.63,B-,Bunzl PLC,LON,Industrials,Capital Goods,Trading Companies and Distributors,Trading Companies and Distributors,0,0,0
-89,BURL,119.3,C,Burlington Stores Inc,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Apparel Retail,"7,965,076,480.00",0.028080001,93.7715567181122
-90,CZR,39.61,B,Caesars Entertainment Inc,NASDAQ,Consumer Discretionary,Consumer Services,Hotels Restaurants & Leisure,Casinos & Gaming,"8,467,588,096.00",-0.1267,95.37937743190662
-91,CCJ,23.8,None,Cameco Corp,NYSE,Energy,Energy,Oil Gas and Consumable Fuels,Coal and Consumable Fuels,"9,471,495,168.00",0.03561,92.04828124633963
-92,CPB,50.25,B,Campbell Soup Co,NYSE,Consumer Staples,Food Beverage and Tobacco,Food Products,Packaged Foods and Meats,"15,162,333,184.00",0.11233,97.39731096583199
-93,GOOS,24.4,None,Canada Goose Holdings Inc,TSE,Consumer Discretionary,Consumer Durables and Apparel,Textiles Apparel and Luxury Goods,Apparel Accessories and Luxury Goods,"1,906,787,712.00",0.08613,82.70921131848284
-94,CNI,112.82,A,Canadian National Railway Co,NYSE,Industrials,Transportation,Road & Rails,Railroads,"79,684,771,840.00",0.33275002,69.77864674254592
-95,CNQ,80.04,B,Canadian Natural Resources Ltd,TSE,Energy,Energy,Oil Gas and Consumable Fuels,Oil and Gas Exploration and Production,"69,020,491,776.00",0.2751,87.67774765777334
-96,CP,70.86,A,Canadian Pacific Railway Ltd,NYSE,Industrials,Transportation,Road & Rails,Railroads,"65,869,615,104.00",0.29407,73.332422088573
-97,CU,34.57,None,Canadian Utilities Ltd,TSE,Utilities,Utilities,Multi-Utilities,Multi-Utilities,0,0,0
-98,CWB,22.83,None,Canadian Western Bank,TSE,Financials,Banks,Banks,Regional Banks,0,0,0
-99,CAR,0.0,None,Carclo PLC,LON,Materials,Materials,Chemicals,Specialty Chemicals,"10,688,353,280.00",0.19127001,98.19158263919334
-100,CSII,13.95,None,Cardiovascular Systems Inc,NASDAQ,Health Care,Health Care Equipment and Services,Health Care Equipment and Supplies,Health Care Equipment,"565,682,240.00",-0.13292,99.21121621061265
-101,CJT,119.83,None,Cargojet Inc,TSE,Industrials,Transportation,Air Freight and Logistics,Air Freight and Logistics,0,0,0
-102,KMX,55.69,None,CarMax Inc,NYSE,Consumer Discretionary,Retailing,Specialty Retail,Automotive Retail,"9,014,651,904.00",0.02774,95.60005745325394
-103,CCL,0.06,None,Carnival PLC,LON,Consumer Discretionary,Consumer Services,Hotels Restaurants and Leisure,Hotels Resorts and Cruise Lines,"10,650,323,968.00",-0.73984003,83.30508474576271
-104,CASY,214.53,None,Casey's General Stores Inc,NASDAQ,Consumer Staples,Food and Staples Retailing,Food and Staples Retailing,Food Retail,"7,960,950,784.00",0.02623,97.5626037817502
-105,CPRX,13.41,None,Catalyst Pharmaceuticals Inc,NASDAQ,Health Care,Pharmaceuticals and Biotechnology,Biotechnology,Biotechnology,"1,382,296,704.00",0.29314,6900.7028
-106,CAT,190.22,None,Caterpillar Inc,NYSE,Industrials,Capital Goods,Machinery,Construction & Farm Machinery & Heavy Trucks,"102,897,991,680.00",0.123330005,88.76685793647893
-107,CCRO3,2.41,B,CCR SA,BVMF,Industrials,Transportation,Transportation Infrastructure,Highways and Railtracks,0,0,0
-108,CNC,73.85,C,Centene Corp,NYSE,Health Care,Health Care Equipment and Services,Health Care Providers and Services,Managed Health Care,"43,091,693,568.00",0.01428,98.41236240474174
-109,ELET3,9.3,B,Centrais Eletricas Brasileiras SA,BVMF,Utilities,Utilities,Electric Utilities,Electric Utilities,0,0,0
-110,CAKE,33.2,None,Cheesecake Factory Inc,NASDAQ,Consumer Discretionary,Consumer Services,Hotels Restaurants and Leisure,Restaurants,"1,732,024,064.00",0.02648,95.75381881902698
-111,CVX,173.19,None,Chevron Corp,NYSE,Energy,Energy,Oil Gas and Consumable Fuels,Integrated Oil and Gas,"333,856,636,928.00",0.14094,90.67097959748776
-112,CAAS,4.0,None,China Automotive Systems Inc,NASDAQ,Consumer Discretionary,Automobiles and Components,Auto Components,Auto Parts and Equipment,"122,173,128.00",0.01544,99.52091873959505
-113,0939,4.52,D-,China Construction Bank Corp,HKG,Financials,Banks,Banks,Diversified Banks,0,0,0
-114,CEA,18.18,None,China Eastern Airlines Corp Ltd,NYSE,Industrials,Transportation,Airlines,Airlines,"12,470,207,488.00",-0.24351999,97.64291307752545
-115,JRJCY,0,None,China Finance Online Co Ltd,NASDAQ,Financials,Diversified Financials,Capital Markets,Investment Banking and Brokerage,0,-0.3461,0
-116,0384,8.45,None,China Gas Holdings Ltd,HKG,Utilities,Utilities,Gas Utilities,Gas Utilities,0,0,0
-117,0941,49.65,A,China Mobile Ltd,HKG,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,0,0,0
+0,Company Name
+17.518998999999997,Abbott Laboratories
+23.188,AbbVie Inc
+2.1559998,Abercrombie & Fitch Co
+11.322000000000001,Acadia Healthcare Co Inc
+24.568,Activision Blizzard Inc
+27.997,Adobe Inc
+14.507,Advanced Micro Devices
+-15.925999,Aemetis Inc
+20.365,Aflac Inc
+-165.463,Air Canada
+19.076,Air Products & Chemicals Inc
+4.671,Alibaba Group Holding Ltd
+0,Alimentation Couche-Tard Inc
+1.9900000000000002,Allstate Corp
+23.746000000000002,Alphabet Inc
+0,Aluminum Corporation of China Ltd
+2.2550002,Amazon.com Inc
+0,Ambev SA
+-21.034001,AMC Entertainment Holdings
+-3.557,American Airlines Group Inc
+3.8120000000000003,American Eagle Outfitters Inc
+13.081001,American Electric Power Co Inc
+15.437999999999999,American Express Co
+33.987,American Water Works Co Inc
+24.924,Amgen Inc
+8.813,AMN Healthcare Services Inc
+0,Anhui Conch Cement Co Ltd
+25.31,Apple Inc
+1.0980001,Aptiv PLC
+6.1100002,ArcBest Corp
+29.552,Arista Networks Inc
+24.105999999999998,Artisan Partners Asset Management Inc
+6.6339999999999995,ASGN Inc
+38.894,Ashland Global Holdings Inc
+0,Asian Paints Ltd
+0,Astra Microwave Products Ltd
+-2.8450001,AstraZeneca PLC
+12.9,AT&T Inc
+0,Atacadao SA
+0,Atul Ltd
+0,Aurobindo Pharma Ltd
+0,Aurora Cannabis Inc
+14.949000000000002,Autozone Inc
+0,Aviva PLC
+0,Axis Bank Ltd
+0,B3 SA - Brasil Bolsa Balcao
+-9.825000000000001,Baidu Inc
+0,Bajaj Auto Ltd
+0,Bajaj Finserv Ltd
+0,Banco BTG Pactual S.A.
+0,Banco do Brasil SA BB Brasil
+0,Banco Santander (Brasil) SA
+0,Bank Bradesco SA
+30.686999999999998,Bank of America Corp
+0,Bank Of Ningbo Co Ltd
+33.728,Bank of Nova Scotia
+48.680001,Bank OZK
+24.601999,Barclays PLC
+-4.496,Barnes & Noble Education Inc
+0,Bata India Ltd
+7.123,Baxter International Inc
+0,BB Seguridade Participacoes SA
+13.042000000000002,BCE Inc
+4.522,Beacon Roofing Supply Inc
+-11.744000999999999,Bed Bath & Beyond Inc
+-12.475999999999999,Benefitfocus Inc
+0,Berger Paints India Ltd
+4.3330003,Best Buy Co Inc
+0,Bharat Heavy Electricals Ltd
+0,Bharti Airtel Ltd
+24.855,BHP Group PLC
+-54.476,Bill.com Holdings Inc
+30.117,Blackrock Inc
+23.247999,Blackstone Inc
+-8.6890005,Boeing Co
+0,Bombardier Inc
+5.33,BorgWarner Inc
+0,Bosch Ltd
+16.033001,Boyd Group Services Inc
+-10.2110006,BP PLC
+0,BR Malls Participacoes SA
+0,BRF SA
+14.036000000000001,Bristol-Myers Squibb Co
+29.763,Broadcom Inc
+4.705,Brookfield Asset Management
+0,BT Group PLC
+11.291,Build-A-Bear Workshop Inc
+0,Bunzl PLC
+2.8080001,Burlington Stores Inc
+-14.148,Caesars Entertainment Inc
+3.5610000000000004,Cameco Corp
+11.233,Campbell Soup Co
+8.613,Canada Goose Holdings Inc
+33.275002,Canadian National Railway Co
+27.51,Canadian Natural Resources Ltd
+29.407,Canadian Pacific Railway Ltd
+0,Canadian Utilities Ltd
+0,Canadian Western Bank
+19.127001,Carclo PLC
+-13.292000000000002,Cardiovascular Systems Inc
+0,Cargojet Inc
+2.774,CarMax Inc
+-156.77,Carnival PLC
+2.6229999999999998,Casey's General Stores Inc
+29.314,Catalyst Pharmaceuticals Inc
+12.3330005,Caterpillar Inc
+0,CCR SA
+1.428,Centene Corp
+0,Centrais Eletricas Brasileiras SA
+2.648,Cheesecake Factory Inc
+14.094000000000001,Chevron Corp
+1.544,China Automotive Systems Inc
+0,China Construction Bank Corp
+-24.351999,China Eastern Airlines Corp Ltd
+-34.61,China Finance Online Co Ltd
+0,China Gas Holdings Ltd
+0,China Mobile Ltd
+-257.016,China Natural Resources Inc
+2.582,China Petroleum & Chemical Corp
+-12.363,China Southern Airlines Co Ltd
+0,China State Construction International Holdings Ltd
+0,China Tourism Group Duty Free Corp Ltd
+0,China Vanke Co Ltd
+0,China World Trade Center Co Ltd
+0,China Yangtze Power Co Ltd
+1.282,China Yuchai International Ltd
+9.2810005,Chipotle Mexican Grill Inc
+0,Cielo SA
+0,Cipla Ltd
+23.276,CISCO Systems Inc
+0,CITIC Ltd
+23.114,Citigroup Inc
+0,City of London Investment Group PLC
+-1.286,Clearwater Paper Corp
+0,Coal India Ltd
+23.162001,Coca-Cola Co
+11.738,Cognizant Technology Solutions Corp
+10.983,Colgate-Palmolive Co
+11.5380004,Comcast Corp
+0,Companhia De Saneamento Basico Do Estado De Sao Paulo
+0,Companhia Siderurgica Nacional
+47.082,Compass Group PLC
+0,Constellation Software Inc
+39.123999999999995,Continental Resources Inc
+10.715999499999999,Corteva Inc
+0,Cosan SA
+2.595,Costco Wholesale Corp
+0,CPFL Energia S.A.
+-49.096000000000004,Credit Suisse Group AG
+2.661,CVS Health Corp
+-69.67999999999999,Daily Journal Corp
+12.763,Deere & Co
+0.174,Delta Air Lines Inc
+15.028,Deutsche Bank AG
+21.025999000000002,Diageo PLC
+31.945,Digital Realty Trust Inc
+40.974,Discover Financial Services
+0,discoverIE Group PLC
+6.550000000000001,Dollar General Corp
+5.7690002,Dollar Tree Inc
+0,Dollarama Inc
+15.089,Dominion Energy Inc
+0,Dominos Pizza Inc
+4.816,Douglas Dynamics Inc
+0,Dr Reddy's Laboratories Ltd
+16.657,Dropbox Inc
+4.414,DXC Technology Co
+11.18,Eastman Chemical Co
+0,easyJet PLC
+0,eClerx Services Ltd
+0,Embraer SA
+10.205,Enbridge Inc
+0.294,Endeavor Group Holdings
+0,Endo International PLC
+4.861,Energy Transfer LP
+-77.68,Enghouse Systems Ltd
+0,ENGIE Brasil Energia SA
+0,Equatorial Energia SA
+17.014000000000003,ETSY Inc
+0,Experian PLC
+48.818,Extra Space Storage Inc
+10.8710006,Exxon Mobil Corp
+28.163,Facebook Inc
+31.520998,Fair Isaac Corp
+0,Fairfax Financial Holdings Ltd
+7.428,Ferguson PLC
+10.516,FirstEnergy Corp
+12.8,FMC Corp
+5.564,Foot Locker Inc
+5.939,Ford Motor Co
+17.663999,Fortinet Inc
+12.918,Fortis Inc
+0,Foxconn Industrial Internet Co Ltd
+20.252001,Franklin Resources Inc
+16.721000999999998,Freeport-McMoRan Inc
+7.718999999999999,FTI Consulting Inc
+17.817,Fuwei Films (Holdings) Co Ltd
+0,GAIL (India) Ltd
+-2.398,Gap Inc
+19.542,Garmin Ltd
+8.623,General Dynamics Corp
+-7.779,General Electric Co
+15.129000000000001,General Mills Inc
+6.5729999999999995,General Motors Co
+38.805,Genmab A/S
+5.8819998,Gibraltar Industries Inc
+12.286,Gilead Sciences Inc
+32.209998,Glacier Bancorp Inc
+12.2370005,GlaxoSmithKline PLC
+0,Glencore PLC
+14.766000000000002,Globus Medical Inc
+0,Godrej Agrovet Ltd
+0,Godrej Consumer Products Ltd
+51.499003,Gogo Inc
+32.818999999999996,Goldman Sachs Group Inc
+0,Granules India Ltd
+-18.215,Great Elm Group Inc
+0,Great-West Lifeco Inc
+8.085,Groupon Inc
+0,Grupo Aeroportuario del Pacifico SAB de CV Class B
+0,Gujarat Industries Power Co Ltd
+16.063,H&R Block Inc
+0,Hangzhou Hik-Vision Digital Technology Co Ltd
+11.651000400000001,Harley-Davidson Inc
+-5.3850003,Harvard Bioscience Inc
+8.304,Hasbro Inc
+0,HCL Technologies Ltd
+0,HDFC Bank Ltd
+21.643,Heartland Express Inc
+0,Hero MotoCorp Ltd
+16.186,Hess Corp
+8.014000000000001,Hibbett Inc
+0,Hindalco Industries Ltd
+0,Hindustan Unilever Ltd
+10.828,Home Depot Inc
+4.859,Honda Motor Co Ltd
+0,Hostelworld Group PLC
+0,Housing Development Finance Corp Ltd
+0,HSBC Holdings PLC
+0,Huaneng Power International Inc
+0.449,Hyatt Hotels Corp
+0,Hypera SA
+0,ICICI Bank Ltd
+15.055999,Illumina Inc
+-4.926,Imax Corp
+0,Infosys Ltd
+6.571000000000001,Innospec Inc
+26.031,INTEL Corp
+56.14,Intercontinental Exchange Inc
+11.4750005,InterContinental Hotels Group PLC
+8.206,IQVIA Holdings Inc
+0,IRB Brasil Resseguros SA
+9.594999999999999,Iron Mountain Inc
+0,ITC Ltd
+4.981,J&J Snack Foods Corp
+0,JBS SA
+-2.6989998,JetBlue Airways Corp
+0,Jiangsu Hengrui Pharmaceuticals Co Ltd
+19.214001,Johnson & Johnson
+0,Johnson Matthey PLC
+32.358003000000004,JPMorgan Chase & Co
+0,Jubilant Foodworks Ltd
+0,Just Dial Ltd
+-0.182,Kaiser Aluminum Corp
+10.807,Kellogg Co
+16.394000000000002,Keurig Dr Pepper Inc
+31.298,KeyCorp
+13.757,Kinder Morgan Inc
+0,Kirkland Lake Gold Ltd
+14.549999999999999,KKR & Co Inc
+0,Klabin SA
+0,Kotak Mahindra Bank Ltd
+0,Kweichow Moutai Co Ltd
+0,Lamprell PLC
+1.752,Lands' End Inc
+0,Larsen & Toubro Ltd
+45.393001999999996,Las Vegas Sands Corp
+17.302,Lazard Ltd
+8.008,LCI Industries Inc
+0,Lloyds Banking Group PLC
+0,Localiza Rent A Car SA
+7.332,Lockheed Martin Corp
+11.464,Loews Corp
+0,Lojas Renner SA
+0,Lookers PLC
+8.854,Lowe's Companies Inc
+15.357999999999999,Lululemon Athletica Inc
+-22.416,Lyft Inc
+0,M Dias Branco SA Industria e Comercio de Alimentos
+29.610999999999997,M&T Bank Corp
+6.2119998,Macy's Inc
+0,Magazine Luiza SA
+0,Mahindra & Mahindra Ltd
+16.675,Manhattan Associates Inc
+37.818000000000005,Marriott International Inc
+0,Maruti Suzuki India Ltd
+46.484002000000004,Mastercard Inc
+9.119,Match Group Inc
+19.004999,Mattel Inc
+0,Max Financial Services Ltd
+10.778,McCormick & Co Inc
+25.773000000000003,McDonald's Corp
+0.422,McKesson Corp
+11.7060006,Mediclinic International PLC
+0,Meituan
+28.999999999999996,Merck & Co Inc
