@@ -1,5 +1,5 @@
-# wharton-competition-AI
-# An AI created by the Lexington Alpha Team for the Wharton Global High School Investment Competition
+# wharton-competition
+# An ESG based stock selector taking data from online. Filtered stocks for the Wharton Global High School Investment Competition
 
 Run the main.py file
 
